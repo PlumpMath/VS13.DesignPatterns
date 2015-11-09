@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<xs:schema id="Recordset" 
+                  targetNamespace="http://tempuri.org/Recordset.xsd"
+                  elementFormDefault="qualified"
+                  attributeFormDefault="qualified"
+                  xmlns="http://tempuri.org/Recordset.xsd"
+                  xmlns:mstns="http://tempuri.org/Recordset.xsd"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                  xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+                  xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+    <xs:element name="Recordset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="SalesOrderTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SalesOrderID" type="xs:int" minOccurs="0" />
+                            <xs:element name="RevisionNumber" type="xs:unsignedByte" minOccurs="0" />
+                            <xs:element name="OrderDate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="DueDate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="ShipDate" type="xs:dateTime" minOccurs="0" />
+                            <xs:element name="Status" type="xs:unsignedByte" minOccurs="0" />
+                            <xs:element name="OnlineOrderFlag" type="xs:boolean" minOccurs="0" />
+                            <xs:element name="SalesOrderNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="PurchaseOrderNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="AccountNumber" type="xs:string" minOccurs="0" />
+                            <xs:element name="CustomerID" type="xs:int" minOccurs="0" />
+                            <xs:element name="ShipToAddressID" type="xs:int" minOccurs="0" />
+                            <xs:element name="BillToAddressID" type="xs:int" minOccurs="0" />
+                            <xs:element name="ShipMethod" type="xs:string" minOccurs="0" />
+                            <xs:element name="CreditCardApprovalCode" type="xs:string" minOccurs="0" />
+                            <xs:element name="SubTotal" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="TaxAmt" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="Freight" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="TotalDue" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="Comment" type="xs:string" minOccurs="0" />
+                            <xs:element name="rowguid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                            <xs:element name="ModifiedDate" type="xs:dateTime" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="SalesOrderDetailTable">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="SalesOrderID" type="xs:int" minOccurs="0" />
+                            <xs:element name="SalesOrderDetailID" type="xs:int" minOccurs="0" />
+                            <xs:element name="OrderQty" type="xs:short" minOccurs="0" />
+                            <xs:element name="ProductID" type="xs:int" minOccurs="0" />
+                            <xs:element name="UnitPrice" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="UnitPriceDiscount" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="LineTotal" type="xs:decimal" minOccurs="0" />
+                            <xs:element name="rowguid" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                            <xs:element name="ModifiedDate" type="xs:dateTime" minOccurs="0" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>            
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
